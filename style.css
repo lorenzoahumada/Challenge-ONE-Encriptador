@@ -8,17 +8,55 @@ h1{
 	padding: 20px;
 }
 
-.input-texto{
-	display: block;
-	width: 40%;
-	margin: 0 0 20px;
-	padding: 10px 25px;
+.texto{
+	text-align: center;
 }
 
-.botones{
+.input-texto{
+	width: 50%;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	border: none;
+	background: #E3F0FE;
+	font-size: 20px;
+}
+
+.imagen-sintexto{
+	width: 16%;
+}
+
+.advertencia{
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.opciones{
+	text-align: center;
+}
+
+.boton-encriptar{
+	width: 20%;
 	margin: 0 20px;
 	padding: 15px 0;
 	font-size: 18px;
 	font-weight: bold;
-	border-radius: 5px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	background: royalblue;
+}
+
+.boton-desencriptar{
+	width: 20%;
+	margin: 0 20px;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px;
+	background: lightgray;
+}
+
+.boton-encriptar:hover{
+	transform: scale(1.1);
 }
