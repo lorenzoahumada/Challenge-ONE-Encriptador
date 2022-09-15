@@ -32,29 +32,53 @@ h1{
 }
 
 .opciones{
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	grid-gap: 24px;
+
+	position: absolute;
+	width: 680px;
+	height: 67px;
+	left: 240px;
+	top: 885px;
+
 }
 
 .boton-encriptar{
-	width: 20%;
-	margin: 0 20px;
-	padding: 15px 0;
-	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	width: 328px;
+	padding: 20px;
+	font-size: 16px;
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 15px;
 	border: none;
 	color: white;
 	background: royalblue;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
 }
 
 .boton-desencriptar{
-	width: 20%;
-	margin: 0 20px;
-	padding: 15px 0;
-	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	width: 328px;
+	padding: 20px;
+	font-size: 16px;
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 15px;
 	background: lightgray;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
 }
 
 .boton-encriptar:hover{
