@@ -6,6 +6,7 @@ h1{
 	font-size: 5em;
 	margin: 0 20px;
 	padding: 20px;
+	color: royalblue;
 }
 
 .texto{
@@ -13,12 +14,21 @@ h1{
 }
 
 .input-texto{
-	width: 50%;
-	margin: 0 0 20px;
-	padding: 10px 25px;
+	position: absolute;
+	width: 577px;
+	height: 48px;
+	left: 240px;
+	top: 168px;
+
+	color: royalblue;
 	border: none;
 	background: #E3F0FE;
-	font-size: 20px;
+	font-size: 32px;
+	line-height: 150%;
+}
+
+::placeholder{
+	color: royalblue;
 }
 
 .imagen-sintexto{
@@ -26,9 +36,16 @@ h1{
 }
 
 .advertencia{
-	display: block;
-	text-align: center;
-	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	position: absolute;
+	width: 300px;
+	height: 18px;
+	left: 240px;
+	top: 851px;
+
 }
 
 .opciones{
