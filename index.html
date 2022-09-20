@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 
-<html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Encriptador de texto</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-</head>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
 
-<body>
-	<header>
-		<h1>a</h1>
-	</header>
+	<body>
+		<header>
+			<h1>a</h1>
+		</header>
 
-	<main>
-		<section class="texto">
-			<textarea cols="30" rows="30" id="mensaje" class="input-texto" placeholder="Ingrese el texto aqui"></textarea>
-		</section>
+		<main>
+			<section class="texto">
+				<textarea cols="30" rows="30" id="mensaje" class="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+			</section>
 
-		<section class="desencriptado">
-			<label>texto desencriptado</label>
-		</section>
+			<section class="desencriptado">
+				<label>texto desencriptado</label>
+			</section>
 
-		<label class="advertencia">&#9432 Solo letras minusculas y sin acentos</label>
-		
-		<section class="opciones">
-			<input type="submit" value="Encriptar" class="boton-encriptar">
+			<label class="advertencia">&#9432 Solo letras minusculas y sin acentos</label>
+			
+			<section class="opciones">
+				<button class="boton-encriptar">Encriptar</button>
 
-			<input type="submit" value="Desencriptar" class="boton-desencriptar">
-		</section>
-	</main>
-</body>
+				<button class="boton-desencriptar">Desencriptar</button>
+			</section>
+		</main>
+	</body>
+
+	<script>
+
+		function alertar(){
+			var texto = document.querySelector(".input-texto");
+			alert(texto.value);
+		}
+
+		var boton = document.querySelector(".boton-encriptar");
+		boton.onclick = alertar;
+
+	</script>
 </html>
