@@ -19,8 +19,8 @@
 				<textarea cols="30" rows="30" id="mensaje" class="input-texto" placeholder="Ingrese el texto aqui"></textarea>
 			</section>
 
-			<section class="desencriptado">
-				<label>texto desencriptado</label>
+			<section>
+				<textarea cols="30" rows="30" class="texto-desencriptado" placeholder="No se ha ingresado ningun texto"></textarea>
 			</section>
 
 			<label class="advertencia">&#9432 Solo letras minusculas y sin acentos</label>
@@ -35,9 +35,20 @@
 
 	<script>
 
+		function encriptar(texto){
+			var texto_nuevo = texto.replace(/e/g, "enter");
+			texto_nuevo = texto_nuevo.replace(/i/g, "imes");
+			texto_nuevo = texto_nuevo.replace(/a/g, "ai");
+			texto_nuevo = texto_nuevo.replace(/o/g, "ober");
+			texto_nuevo = texto_nuevo.replace(/u/g, "ufat");
+
+			return texto_nuevo;
+		}
+
 		function alertar(){
 			var texto = document.querySelector(".input-texto");
-			alert(texto.value);
+			var texto_desencriptado = document.querySelector(".texto-desencriptado");
+			texto_desencriptado.value = encriptar(texto.value);
 		}
 
 		var boton = document.querySelector(".boton-encriptar");
