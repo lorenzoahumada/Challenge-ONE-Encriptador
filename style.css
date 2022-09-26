@@ -16,7 +16,7 @@ h1{
 .input-texto{
 	position: absolute;
 	width: 577px;
-	height: 48px;
+	height: 300px;
 	left: 240px;
 	top: 168px;
 
@@ -47,7 +47,7 @@ h1{
 .texto-desencriptado{
 	position: absolute;
 	width: 336px;
-	height: 781px;
+	height: 740px;
 	left: 1032px;
 	top: 72px;
 
@@ -121,6 +121,24 @@ h1{
 
 	flex: none;
 	order: 1;
+	flex-grow: 0;
+}
+
+.boton-copiar{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	margin-left: 120px;
+	width: 328px;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 15px;
+	background: white;
+
+	flex: none;
+	order: 2;
 	flex-grow: 0;
 }
 

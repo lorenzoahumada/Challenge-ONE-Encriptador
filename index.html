@@ -29,6 +29,8 @@
 				<button class="boton-encriptar">Encriptar</button>
 
 				<button class="boton-desencriptar">Desencriptar</button>
+
+				<button class="boton-copiar">Copiar</button>
 			</section>
 		</main>
 	</body>
@@ -45,14 +47,33 @@
 			return texto_nuevo;
 		}
 
-		function alertar(){
+		function desencriptar(texto){
+			var texto_nuevo = texto.replace(/enter/g, "e");
+			texto_nuevo = texto_nuevo.replace(/imes/g, "i");
+			texto_nuevo = texto_nuevo.replace(/ai/g, "a");
+			texto_nuevo = texto_nuevo.replace(/ober/g, "o");
+			texto_nuevo = texto_nuevo.replace(/ufat/g, "u");
+
+			return texto_nuevo;
+		}
+
+		function encriptar_texto(){
 			var texto = document.querySelector(".input-texto");
 			var texto_desencriptado = document.querySelector(".texto-desencriptado");
 			texto_desencriptado.value = encriptar(texto.value);
 		}
 
-		var boton = document.querySelector(".boton-encriptar");
-		boton.onclick = alertar;
+		function desencriptar_texto(){
+			var texto = document.querySelector(".input-texto");
+			var texto_desencriptado = document.querySelector(".texto-desencriptado");
+			texto_desencriptado.value = desencriptar(texto.value);
+		}
+
+		var boton_encriptar = document.querySelector(".boton-encriptar");
+		boton_encriptar.onclick = encriptar_texto;
+
+		var boton_desencriptar = document.querySelector(".boton-desencriptar");
+		boton_desencriptar.onclick = desencriptar_texto;
 
 	</script>
 </html>
