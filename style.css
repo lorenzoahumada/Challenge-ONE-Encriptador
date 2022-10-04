@@ -1,6 +1,21 @@
+/*
+body{ height:100vh; margin:0; }
+
+header{ min-height:50px;}
+footer{ min-height:50px;}
+*/
+
 body{
+	display: flex;
+	flex-direction: column;
 	background: #E3F0FE;
 }
+
+/*
+header{
+	background: white;
+}
+*/
 
 h1{
 	font-size: 5em;
@@ -129,7 +144,7 @@ h1{
 	flex-direction: row;
 	align-items: flex-start;
 
-	margin-left: 120px;
+	margin-left: 130px;
 	width: 328px;
 	padding: 20px;
 	font-size: 16px;
@@ -145,3 +160,42 @@ h1{
 .boton-encriptar:hover{
 	transform: scale(1.1);
 }
+
+/*
+footer{
+	margin-top: auto;
+	background: black;
+}
+*/
+/*
+@media screen and (max-width: 640px){
+	.texto-desencriptado{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 688px;
+		height: 133px;
+		left: 220px;
+		top: 1001px;
+	}
+	.boton-copiar{
+		width: 576px;
+		height: 19px;
+		flex: none;
+		order: 0;
+		flex-grow: 1;
+	}
+	.opciones{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width: 688px;
+		height: 67px;
+		left: 40px;
+		top: 870px;
+	}
+	.texto, .opciones, .texto-desencriptado{
+		position: absolute;
+	}
+}
+*/

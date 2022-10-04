@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -61,12 +61,20 @@
 			var texto = document.querySelector(".input-texto");
 			var texto_desencriptado = document.querySelector(".texto-desencriptado");
 			texto_desencriptado.value = encriptar(texto.value);
+			texto.value = "";
 		}
 
 		function desencriptar_texto(){
 			var texto = document.querySelector(".input-texto");
 			var texto_desencriptado = document.querySelector(".texto-desencriptado");
 			texto_desencriptado.value = desencriptar(texto.value);
+			texto.value = "";
+		}
+
+		function copiar_texto(){
+			var texto_desencriptado = document.querySelector(".texto-desencriptado");
+			texto_desencriptado.select();
+			navigator.clipboard.writeText(texto_desencriptado.value);
 		}
 
 		var boton_encriptar = document.querySelector(".boton-encriptar");
@@ -74,6 +82,9 @@
 
 		var boton_desencriptar = document.querySelector(".boton-desencriptar");
 		boton_desencriptar.onclick = desencriptar_texto;
+
+		var boton_copiar = document.querySelector(".boton-copiar");
+		boton_copiar.onclick = copiar_texto;
 
 	</script>
 </html>
